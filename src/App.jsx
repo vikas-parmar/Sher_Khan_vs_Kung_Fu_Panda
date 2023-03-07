@@ -1,9 +1,9 @@
 import React from 'react'
-import Square from './Square'
+import Board from './Board'
 import './style.css'
 
 const App = () => {
-  return <Square />
+  return <Board />
 }
 
 export default App
