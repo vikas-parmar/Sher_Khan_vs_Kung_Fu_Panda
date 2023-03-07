@@ -1,9 +1,9 @@
 import React from 'react'
+import Square from './Square'
+import './style.css'
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
+  return <Square />
 }
 
 export default App
