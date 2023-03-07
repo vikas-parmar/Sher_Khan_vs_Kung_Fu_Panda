@@ -6,6 +6,9 @@ const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   const handleClick=(i)=>{
+    if (squares[i]){
+      return;
+    }
     const nextSquares = squares.slice(); //creating a copy of squares array
     if(xIsNext){
       nextSquares[i] = "X";
