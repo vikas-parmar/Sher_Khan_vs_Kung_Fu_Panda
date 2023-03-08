@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import Square from './Square'
 
-const Board = () => {
-  const [xIsNext, setXIsNext] = useState(true);
-  const [squares, setSquares] = useState(Array(9).fill(null));
+const Board = ({ xIsNext, squares, onPlay }) => {
 
   const handleClick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
@@ -13,17 +11,12 @@ const Board = () => {
     const nextSquares = [...squares];
 
     nextSquares[i] = xIsNext ? "X" : "O";
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
+    onPlay(nextSquares);
   }
 
   const winner = calculateWinner(squares);
-  let status;
-  if (winner) {
-    status = 'Winner: ' + winner;
-  } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O')
-  }
+ 
+  let status = winner ? 'winner: ' + winner : 'Next player: ' + (xIsNext ? 'X' : 'O')
   return (
     <div className='board'>
       <h1> Tic Tac Toe </h1>
