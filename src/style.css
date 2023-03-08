@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-row {
+    display: inline-flex;
+}
+
+.square{
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+}
+
+.square:hover{
+    background-color: rgb(226, 222, 222);
+    cursor: pointer;
+}
