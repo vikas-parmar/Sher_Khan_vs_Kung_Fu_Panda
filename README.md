@@ -1,1 +1,1 @@
-# tic-tac-toe --new
+# tic-tac-toe
