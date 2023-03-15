@@ -1,9 +1,7 @@
-import React from 'react'
-import Game from './Game'
-import './style.css'
+import React from 'react';
+import Game from './Game';
+import './style.css';
 
-const App = () => {
-  return <Game />
-}
+const App = () => <Game />;
 
-export default App
+export default App;
