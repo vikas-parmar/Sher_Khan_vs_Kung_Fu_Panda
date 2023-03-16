@@ -40,7 +40,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
 
   return (
     <div className="board">
-      <h1> Tic Tac Toe </h1>
+      <h1> Tic Tac Toe Game </h1>
       <h2>{status}</h2>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
