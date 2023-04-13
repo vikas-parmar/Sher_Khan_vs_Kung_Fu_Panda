@@ -37,7 +37,7 @@ npm run dev
 - Problem- solving : this project is helpful to me to boost up my problem- solving skills by identifying and fixing bugs, implementing new features, and optimizing performance.
 
 ## Optimizations
-When I improve this repository, I'll improve it better user interface and add some features like animations, sounds and integration with social media platforms.
+When I improve this repository, I'll improve it with better user interface and add some features like animations, sounds and integration with social media platforms.
 
 ## Authors
 - GitHub: [Vikas Parmar](https://github.com/vikas-parmar)
