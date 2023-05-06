@@ -40,5 +40,5 @@ npm run dev
 When I improve this repository, I'll improve it with better user interface and add some features like animations, sounds and integration with social media platforms.
 
 ## Authors
-- GitHub: [Vikas Parmar](https://github.com/vikas-parmar)
-- LinkedIn: [Vikas Parmar](https://www.linkedin.com/in/vikas-parmar/)
+- GitHub: [ Vikas Parmar ](https://github.com/vikas-parmar)
+- LinkedIn: [ Vikas Parmar ](https://www.linkedin.com/in/vikas-parmar/)
