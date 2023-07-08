@@ -25,6 +25,12 @@ h1 {
   color: white;
 }
 
+@media screen and (min-width: 480px){
+  h1{
+    font-size: 3rem;
+  }
+}
+
 h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
