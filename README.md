@@ -60,11 +60,15 @@ To run this project locally, follow these steps:
 
 Contributions to Sher Khan vs. Kung Fu Panda Tic Tac Toe are always welcome! If you'd like to contribute, please fork the repository and create a pull request with your proposed changes. We appreciate your input!
 
+## License
+
+This project is licensed under the [MIT License](LICENSE), which means you're free to use, modify, and distribute the code as you wish.
+
 ## Acknowledgements
 
 - The game was inspired by the classic tic tac toe game.
 - Special thanks to the creators of Sher Khan and Kung Fu Panda characters.
 
-## Build with 💜
+## Build with 💜 by
 - GitHub: [ Vikas Parmar ](https://github.com/vikas-parmar)
 - LinkedIn: [ Vikas Parmar ](https://www.linkedin.com/in/vikas-parmar/)
