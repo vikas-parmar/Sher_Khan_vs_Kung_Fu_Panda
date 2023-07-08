@@ -35,7 +35,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
   const winner = calculateWinner(squares);
   const status = winner
     ? `winner: ${winner}`
-    : `Next player: ${xIsNext ? "X" : "O"}`;
+    : `Next player: ${xIsNext ? "🦁" : "🐼"}`;
 
   const handleClick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
@@ -43,7 +43,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
     }
 
     const nextSquares = [...squares];
-    nextSquares[i] = xIsNext ? "X" : "O";
+    nextSquares[i] = xIsNext ? "🦁" : "🐼";
     onPlay(nextSquares);
   };
 
