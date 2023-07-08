@@ -37,7 +37,7 @@ h2 {
 }
 
 .game-info {
-  width: 16%;
+  width: fit-content;
   height: 18%;
   overflow-y: scroll;
   scrollbar-width: thin; /* For Firefox */
