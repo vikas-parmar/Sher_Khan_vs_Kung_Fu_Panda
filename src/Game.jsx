@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import Board from './Board';
+import { useState } from "react";
+import Board from "./Board";
 
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -16,26 +16,24 @@ export default function Game() {
     setCurrentMove(nextMove);
   };
   const moves = history.map((squares, move) => {
-    const description = (move === 0) ? 'Go to game start' : 'Go to move #';
+    const description = move === 0 ? "Go To Game Start" : "Go to Move #";
     return (
-      // eslint-disable-next-line react/no-array-index-key
       <li key={move}>
-        <button type="button" onClick={() => jumpTo(move)}>{description}</button>
+        <button type="button" onClick={() => jumpTo(move)}>
+          {description}
+        </button>
       </li>
     );
   });
 
   return (
     <div className="game">
+      <h1> Tic Tac Toe Game </h1>
       <div className="game-board">
-        <Board
-          xIsNext={xIsNext}
-          squares={currentSquares}
-          onPlay={handlePlay}
-        />
-        <div className="game-info">
-          <ol>{moves}</ol>
-        </div>
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      </div>
+      <div className="game-info">
+        <ol>{moves}</ol>
       </div>
     </div>
   );

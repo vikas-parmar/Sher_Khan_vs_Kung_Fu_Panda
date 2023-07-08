@@ -1,5 +1,5 @@
-import React from 'react';
-import Square from './Square';
+import React from "react";
+import Square from "./Square";
 
 const boardRows = [
   [0, 1, 2],
@@ -21,7 +21,7 @@ const calculateWinner = (squares) => {
 
   let winner = null;
 
-  lines.forEach(line => {
+  lines.forEach((line) => {
     const [a, b, c] = line;
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       winner = squares[a];
@@ -33,7 +33,9 @@ const calculateWinner = (squares) => {
 
 const Board = ({ xIsNext, squares, onPlay }) => {
   const winner = calculateWinner(squares);
-  const status = winner ? `winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`;
+  const status = winner
+    ? `winner: ${winner}`
+    : `Next player: ${xIsNext ? "X" : "O"}`;
 
   const handleClick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
@@ -41,26 +43,27 @@ const Board = ({ xIsNext, squares, onPlay }) => {
     }
 
     const nextSquares = [...squares];
-    nextSquares[i] = xIsNext ? 'X' : 'O';
+    nextSquares[i] = xIsNext ? "X" : "O";
     onPlay(nextSquares);
   };
 
   return (
-    <div className="board">
-      <h1> Tic Tac Toe Game </h1>
+    <>
       <h2>{status}</h2>
-      {
-        boardRows.map(row => (
+      <div className="board">
+        {boardRows.map((row) => (
           <div className="board-row" key={row}>
-            {
-              row.map(s => (
-                <Square key={s} value={squares[s]} onSquareClick={() => handleClick(s)} />
-              ))
-            }
+            {row.map((s) => (
+              <Square
+                key={s}
+                value={squares[s]}
+                onSquareClick={() => handleClick(s)}
+              />
+            ))}
           </div>
-        ))
-      }
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

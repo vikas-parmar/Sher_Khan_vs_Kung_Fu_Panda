@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Square = ({ value, onSquareClick }) => (
   <button type="button" className="square" onClick={onSquareClick}>
-    {value || null }
+    {value || null}
   </button>
 );
 
