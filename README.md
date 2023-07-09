@@ -48,8 +48,9 @@ To run this project locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/vikas-parmar/sher-khan-vs-kung-fu-panda.git`
 2. Navigate to the project directory: `cd sher-khan-vs-kung-fu-panda`
-3. Open `index.html` in your preferred web browser.
-4. Start playing and enjoy the game!
+3. Install with `npm install`.
+4. Usage `npm run dev`.
+5. Start playing and enjoy the game!
 
 ## What I learn from this project
 - React fundamentals : learnt React concepts like components, props, state, and event handling.
